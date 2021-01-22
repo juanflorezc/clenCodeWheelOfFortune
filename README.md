@@ -18,9 +18,9 @@ you can use the next postman collection https://www.getpostman.com/collections/e
 
 
 # Endpoinds
-1. Endpoint de creación de nuevas ruletas: (POST) /WheelOfFortune/create
-2. Endpoint de apertura de ruleta: (POST) /WheelOfFortune/open?prmId=<<guidid>>
-3. Endpoint de apuesta a un número: (POST) /WheelOfFortune/Bet 
+1. "Endpoint de creación de nuevas ruletas": (POST) /WheelOfFortune/create
+2. "Endpoint de apertura de ruleta": (POST) /WheelOfFortune/open?prmId=<<guidid>>
+3. "Endpoint de apuesta a un número": (POST) /WheelOfFortune/Bet 
    body:
       {
       "IdWheelOfFortune":<<guidid of the wheel>>,
@@ -30,4 +30,4 @@ you can use the next postman collection https://www.getpostman.com/collections/e
       }
   header:
     userID -> string value
-4. Endpoint de cierre apuestas dado un id (POST) WheelOfFortune/close?prmId=<<guidid>>
+4. "Endpoint de cierre apuestas dado un id" (POST) WheelOfFortune/close?prmId=<<guidid>>
