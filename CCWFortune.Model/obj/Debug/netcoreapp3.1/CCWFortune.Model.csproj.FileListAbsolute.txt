@@ -1,0 +1,4 @@
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Model\bin\Debug\netcoreapp3.1\CCWFortune.Model.exe
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Model\obj\Debug\netcoreapp3.1\CCWFortune.Model.csprojAssemblyReference.cache
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Model\obj\Debug\netcoreapp3.1\CCWFortune.Model.AssemblyInfoInputs.cache
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Model\obj\Debug\netcoreapp3.1\CCWFortune.Model.AssemblyInfo.cs
