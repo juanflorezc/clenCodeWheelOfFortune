@@ -1,5 +1,6 @@
 ﻿using CCWFortune.Services.Interfaces;
 using Jil;
+using Microsoft.Extensions.Configuration;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,14 @@ namespace CCWFortune.Services
     public class WheelServices:IWheelServices
     {
         private readonly RedisService _redisService;
+        private readonly int _maxBetMoney;
+        private readonly int _maxNumberWheel;
 
-        public WheelServices(RedisService redisService)
+        public WheelServices(RedisService redisService, IConfiguration config)
         {
             _redisService = redisService;
+            _maxBetMoney = Convert.ToInt32(config["Conf:MaxBetMoney"]);
+            _maxNumberWheel = Convert.ToInt32(config["Conf:MaxNumberWheel"]);
         }
 
         public async Task<bool> BetWheelOFFortune(Bet bet)
@@ -56,13 +61,13 @@ namespace CCWFortune.Services
 
         private bool validBet(Bet bet)
         {
-            if (bet.Money > 100000)
+            if (bet.Money > _maxBetMoney)
             {
                 return false;
             }
             if(bet.BetNumber!=null)
             {
-                if(bet.BetNumber>36 || bet.BetNumber < 0)
+                if(bet.BetNumber> _maxNumberWheel || bet.BetNumber < 0)
                 {
                     return false;
                 }
@@ -123,7 +128,7 @@ namespace CCWFortune.Services
         private int getWinnerNumber()
         {
             Random rnd = new Random();
-            return rnd.Next(0, 37);
+            return rnd.Next(0, _maxNumberWheel+1);
         }
 
         public async Task<Guid> CreateWheelOFFortune()
