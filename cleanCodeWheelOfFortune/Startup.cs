@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using StackExchange.Redis;
 
 namespace cleanCodeWheelOfFortune
 {
@@ -26,6 +27,7 @@ namespace cleanCodeWheelOfFortune
 
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
+
 
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -48,7 +50,7 @@ namespace cleanCodeWheelOfFortune
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, RedisService redisService)
         {
             app.UseCors(MyAllowSpecificOrigins);
 
@@ -79,24 +81,20 @@ namespace cleanCodeWheelOfFortune
                 });
                 app.UseHsts();
             }
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            redisService.Connect();
         }
 
         private void ConfigureDependencyInjection(IServiceCollection services)
         {
-
-            services.AddTransient<IWheelServices, WheelServices>();            
-
+            services.AddSingleton<RedisService>();
+            services.AddTransient<IWheelServices, WheelServices>();
         }
     }
 }

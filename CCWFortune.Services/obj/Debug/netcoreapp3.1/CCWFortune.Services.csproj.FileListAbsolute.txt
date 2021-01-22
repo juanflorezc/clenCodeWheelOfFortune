@@ -1,9 +1,12 @@
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.AssemblyInfoInputs.cache
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.AssemblyInfo.cs
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\bin\Debug\netcoreapp3.1\CCWFortune.Services.deps.json
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\bin\Debug\netcoreapp3.1\CCWFortune.Services.dll
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\bin\Debug\netcoreapp3.1\CCWFortune.Services.pdb
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.csprojAssemblyReference.cache
-C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.csproj.CoreCompileInputs.cache
-C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.AssemblyInfoInputs.cache
-C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.AssemblyInfo.cs
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.dll
 C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.pdb
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.csproj.CoreCompileInputs.cache
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\bin\Debug\netcoreapp3.1\CCWFortune.Model.dll
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\bin\Debug\netcoreapp3.1\CCWFortune.Model.pdb
+C:\Repositorios\GIT\clenCodeWheelOfFortune\CCWFortune.Services\obj\Debug\netcoreapp3.1\CCWFortune.Services.csproj.CopyComplete
